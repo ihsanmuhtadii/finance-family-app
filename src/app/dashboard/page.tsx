@@ -170,7 +170,7 @@ export default function DashboardPage() {
                 <CartesianGrid strokeDasharray="3 3" stroke="#f3f4f6" />
                 <XAxis dataKey="name" tick={{ fontSize: 11, fill: '#9ca3af' }} axisLine={false} tickLine={false} />
                 <YAxis tick={{ fontSize: 11, fill: '#9ca3af' }} axisLine={false} tickLine={false} />
-                <Tooltip formatter={(val: number) => [`Rp ${val} rb`, '']} contentStyle={{ fontSize: 12, borderRadius: 8, border: '1px solid #e5e7eb' }} />
+                <Tooltip formatter={(val) => [`Rp ${Number(val)} rb`, '']} contentStyle={{ fontSize: 12, borderRadius: 8, border: '1px solid #e5e7eb' }} />
                 <Legend wrapperStyle={{ fontSize: 12 }} />
                 <Bar dataKey="Budget" fill="#e0e7ff" radius={[3, 3, 0, 0]} />
                 <Bar dataKey="Aktual" fill="#6366f1" radius={[3, 3, 0, 0]} />
